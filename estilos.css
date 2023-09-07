@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Quicksand&family=Roboto&family=Ubuntu:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lista{
+    list-style: none;
+    background: rgb(12, 13, 82);
+    padding: 40px;
+    display: flex;
+    place-content: center;
+    gap: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.lista li {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* BLOQUE FORMULARIO */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background: rgb(12, 13, 82);
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario label {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.formulario input {
+    padding: 8px;
+    font-size: 1rem;
+    color: rgb(49, 49, 49);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.radios {
+    text-align: center;
+}
+
+.radios input {
+    margin-right: 5px;
+}
+
+.radios label {
+    margin-right: 20px;
+}
