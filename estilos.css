@@ -6,39 +6,65 @@
     box-sizing: border-box;
 }
 
+body, html {
+    background-color: #ececec;
+}
+
 .lista{
     list-style: none;
-    background: rgb(12, 13, 82);
-    padding: 40px;
+    background: rgb(44, 48, 75);
+    padding: 25px;
     display: flex;
     place-content: center;
     gap: 50px;
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    max-width: 80%;
+    margin: 20px auto 50px;
+    border-radius: 15px;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .lista li {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.lista li:hover {
+    background: #fff;
+    color: #292929;
+    font-weight: 800;
 }
 
 /* BLOQUE FORMULARIO */
 .formulario {
     display: flex;
     flex-direction: column;
-    background: rgb(12, 13, 82);
-    max-width: 800px;
+    background: rgb(44, 48, 75);
+    max-width: 500px;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.4);
     padding: 40px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+}
+
+.formulario h1 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+
 }
 
 .formulario label {
     font-size: 1.2rem;
     margin-bottom: 4px;
+    font-family: 'Heebo', sans-serif;
+    padding-left: 3px;
 }
 
 .formulario input {
@@ -47,10 +73,13 @@
     color: rgb(49, 49, 49);
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
 }
 
 .radios {
     text-align: center;
+    margin: 5px 0 5px 0;
 }
 
 .radios input {
@@ -59,4 +88,72 @@
 
 .radios label {
     margin-right: 20px;
+}
+
+.formulario input[type="submit"] {
+    background: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-family: 'Heebo', sans-serif;
+    border: none;
+    border-radius: 10px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* BLOQUE TABLA */
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    place-self: center;
+    margin: 30px auto;
+    min-width: 700px;
+}
+
+table thead {
+    background: rgb(44, 48, 75);
+    color: #fff;
+}
+
+table thead th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+table thead th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+table thead th {
+    padding: 15px;
+    font-size: 1.1rem;
+    font-family: 'Heebo',sans-serif;
+    text-align: left;
+}   
+
+table tbody td {
+    padding: 12px 15px 12px 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+tbody tr:nth-child(even){
+    background-color: #afafaf;
+}
+
+tbody button {
+    padding: 10px;
+    border: 1px solid rgb(44, 48, 75);
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+
+tbody button:hover {
+    background: rgb(44, 48, 75);
+    color: #fff;
 }
