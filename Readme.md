@@ -1,3 +1,3 @@
 Integrantes:
--Luna Padilla Luis Donaldo
+-Camarena Flores Fernando
 -Guzman Gutierrez Jorge Alberto
