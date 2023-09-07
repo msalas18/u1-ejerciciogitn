@@ -1,3 +1,3 @@
 Integrantes:
--Luna Padilla Luis Donaldo
--Guzman Gutierrez Jorge Alberto
+-Fernando Camarena Flores
+-Mayté Guadalupe Salas Pulido
